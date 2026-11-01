@@ -26,11 +26,9 @@ It contains 28 included runs:
 
 ## Complete artifact package
 
-The full reviewer package is provided under:
+The complete frozen reviewer archive is uploaded separately to IEEE as **Supplementary Material for Review**. It contains the evaluated implementation source, raw and processed evidence, controller/event logs, threshold scripts, resource-analysis scripts, workload notes, comparator notes, and a SHA-256 manifest.
 
-`supplementary/Tolay_Osmanoglu_IoTJ_Supplementary_Reproducibility.zip`
-
-It contains the evaluated implementation source, raw and processed evidence, controller/event logs, threshold scripts, resource-analysis scripts, workload notes, comparator notes, and a SHA-256 manifest.
+This public repository intentionally exposes the principal evaluated code, frozen run registry, key processed outputs, and analysis scripts in a browsable form.
 
 ## Interpretation boundaries
 
