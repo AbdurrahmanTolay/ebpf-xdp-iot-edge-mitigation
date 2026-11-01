@@ -1,0 +1,53 @@
+FINAL MEASURED EVIDENCE SUMMARY
+===============================
+
+Functional XDP validation:
+- Functional experiment runs: 12
+- Run/protocol validation instances: 18
+- UDP instances: 6/6 ALERT, DROP, and recovery observed
+- TCP SYN instances: 6/6 ALERT, DROP, and recovery observed
+- ICMP instances: 6/6 ALERT, DROP, and recovery observed
+- Controller decision consistency: 18/18
+- Maximum observed UDP rate: 1.1 PPS
+- Maximum observed TCP SYN rate: 1.2 PPS
+- Maximum observed ICMP rate: 1.5 PPS
+- Exact detection-delay statistics excluded because manual event markers are unsuitable for precise timing.
+
+Thresholds:
+- UDP: 0.6 PPS
+- TCP SYN: 0.6 PPS
+- ICMP: 1.1 PPS
+
+Legitimate-workload resource measurements, mean across 3 runs:
+- No defense CPU: 0.22249%
+- Telemetry-only CPU: 0.22239%
+- Full detection/mitigation CPU: 0.24950%
+- No defense system memory used: 402.42 MB
+- Telemetry-only system memory used: 408.39 MB
+- Full system memory used: 410.96 MB
+- All included resource runs: zero RX/TX interface drop/error deltas.
+
+Static comparator drop counters, mean +/- SD across 3 runs:
+- iptables UDP: 13.00 +/- 3.61 packets
+- iptables TCP SYN: 77.00 +/- 12.29 packets
+- iptables ICMP: 34.00 +/- 4.36 packets
+- nftables UDP: 15.67 +/- 3.79 packets
+- nftables TCP SYN: 82.67 +/- 10.26 packets
+- nftables ICMP: 35.33 +/- 4.16 packets
+
+Compact source-churn validation:
+- Controlled source IPs: 10
+- Controlled sources observed: 10/10
+- Total map entries after experiment: 21
+- Distinct source IPs observed: 18
+- LRU_PERCPU_HASH maximum configured entries: 4096
+- Mean system CPU during compact churn run: ~0.211%
+- No interface RX/TX drops or errors.
+- Full 4096-entry LRU eviction pressure was NOT tested.
+
+Methodological limitations:
+- Raspberry Pi bcmgenet does not support native-driver XDP; experiments use generic XDP/XDP_SKB.
+- Static iptables/nftables comparators are not adaptive-equivalent to the proposed controller.
+- Cross-condition traffic volumes were not perfectly matched during resource measurements.
+- Memory measurements are system-wide, not isolated BPF/controller RSS.
+- Detection-delay statistics are not reported.
