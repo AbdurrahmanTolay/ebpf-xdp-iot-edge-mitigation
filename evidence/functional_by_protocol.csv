@@ -1,0 +1,4 @@
+protocol_class,run_class_instances,instances_with_alert,instances_with_drop,instances_with_recovery,decision_consistent_instances,max_observed_pps
+UDP,6,6,6,6,6,1.1
+TCP_SYN,6,6,6,6,6,1.2
+ICMP,6,6,6,6,6,1.5
