@@ -14,7 +14,7 @@ The study evaluates a bounded, source-IPv4/protocol telemetry and reversible PAS
 - processed functional-validation and resource summaries;
 - iptables/nftables reference results;
 - analysis and threshold-generation scripts;
-- a complete frozen supplementary archive under `supplementary/`.
+- curated, browsable code and processed evidence aligned with the submitted manuscript.
 
 ## Evidence scope
 
@@ -39,7 +39,6 @@ The study does not establish line-rate capacity, native-XDP performance, formal 
 - `implementation/` — evaluated XDP and controller source.
 - `analysis/` — scripts used for threshold and result processing.
 - `evidence/` — frozen registry and key processed outputs used by the manuscript.
-- `supplementary/` — complete reviewer reproducibility archive.
 - `REPRODUCIBILITY.md` — artifact-to-manuscript mapping and interpretation notes.
 - `CITATION.cff` — citation metadata.
 
@@ -51,11 +50,9 @@ The measured gateway was a Raspberry Pi 4 Model B using `eth0` and the `bcmgenet
 
 Start with `REPRODUCIBILITY.md` and `evidence/experiment_registry.csv`.
 
-The complete frozen package is also provided as:
+The complete frozen reviewer archive, including raw logs and additional supporting files, is uploaded separately to IEEE as Supplementary Material for Review. This public repository provides the principal evaluated code, frozen registry, processed result tables, and analysis scripts for transparent inspection.
 
-`supplementary/Tolay_Osmanoglu_IoTJ_Supplementary_Reproducibility.zip`
-
-This repository is intended to support transparent peer review and reproducibility inspection of the evidence reported in the manuscript. It deliberately excludes unvalidated experimental extensions and manuscript-development workspaces.
+This repository deliberately excludes unvalidated experimental extensions and manuscript-development workspaces.
 
 ## Authors
 
