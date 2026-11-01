@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Workload-Aware Protocol-Specific eBPF/XDP Mitigation for Resource-Constrained IoT Edge Gateways"
+type: software
+authors:
+  - family-names: Tolay
+    given-names: Abdurrahman
+    orcid: "https://orcid.org/0009-0000-8855-6799"
+  - family-names: Osmanoğlu
+    given-names: Hüsamettim
+    orcid: "https://orcid.org/0000-0002-1027-2945"
+repository-code: "https://github.com/AbdurrahmanTolay/ebpf-xdp-iot-edge-mitigation"
+date-released: 2026-11-01
